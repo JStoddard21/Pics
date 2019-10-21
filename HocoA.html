@@ -94,7 +94,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </head>
 <body>
 
-<h2>D Image Modal</h2>
+<h2>E Image Modal</h2>
 <p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
 <p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
 
@@ -110,7 +110,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
-//var modal = document.getElementById('id01');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
@@ -125,12 +124,7 @@ img.onclick = function(){
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-  
-// When the user clicks anywhere outside of the modal, close it
-/* window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none"; */
- When the user clicks on <span> (x), close the modal
+// When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
 }
