@@ -156,6 +156,13 @@ body {background-color:#303136; font-family: Arial, Helvetica, sans-serif;}
 <p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
 <p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
 
+  
+<photodisp>
+  <span slot="imgid">9342img</span>
+  <span slot="source">Hoco19-20/artsy/H1920_artsy_9342.jpg</span>
+  <span slot="altern">H1920_artsy_9342.jpg</span>
+</photodisp>
+
 <template id="photodisp">
   <span>
   <code class="name">&lt;<slot name="imgid">NEED NAME</slot>&gt;</code>
@@ -193,12 +200,6 @@ var span = document.getElementsByClassName("close")[0];
 }
 </script>
 </template>
-  
-<photodisp>
-  <span slot="imgid">9342img</span>
-  <span slot="source">Hoco19-20/artsy/H1920_artsy_9342.jpg</span>
-  <span slot="altern">H1920_artsy_9342.jpg</span>
-</photodisp>
 
   
 <img id="1471img" src="Hoco19-20/artsy/H1920_artsy_1471.jpg" alt="H1920_artsy_1471" style="width:100%;max-width:300px;color:tomato" img class="roundedImg">
