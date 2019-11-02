@@ -106,6 +106,7 @@ body {background-color:#303136; font-family: Arial, Helvetica, sans-serif;}
 <img id="myImg2" src="https://www.stantonamarlberg.com/uploads/media/200x200/07/1537-Mountainbike1.jpg?v=1-0" alt="Fire" style="width:100%;max-width:300px">
 <img id="myImg3" src="http://www.isthmusreview.com/wp-content/uploads/2018/06/mountaincloud-200x200.jpg" alt="Wood" style="width:100%;max-width:300px">
 <img id="myImg4" src="/Hoco19-20/Images/H1920_artsy_1679.jpg" alt="Test" style="width:100%;max-width:300px">
+<img id="myImg5" src="https://github.com/JStoddard21/Pics/blob/master/Hoco19-20/Images/H1920_artsy_1679.jpg" alt="Test2" style="width:100%;max-width:300px">
   
 
 <!-- The Modal -->
@@ -124,6 +125,7 @@ var img = document.getElementById("myImg");
 var img2 = document.getElementById("myImg2");
 var img3 = document.getElementById("myImg3");
 var img4 = document.getElementById("myImg4");
+var img5 = document.getElementById("myImg5");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
@@ -146,7 +148,11 @@ img4.onclick = function(){
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
-  
+img5.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}  
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
