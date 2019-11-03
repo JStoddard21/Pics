@@ -134,9 +134,11 @@ for( let i = 0; i < imgs.length; i++) {
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.addEventListener("click", function(){
-  modal.style.display = "none";
+// When the user clicks anywhere, close the modal
+document.getElementsByClassName('modal')[0].addEventListener("click", function(){
+  if(modal.style.display != "none"){
+    modal.style.display = "none";
+  }
 });
 </script>
 
